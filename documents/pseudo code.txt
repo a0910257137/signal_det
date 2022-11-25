@@ -1,0 +1,33 @@
+pseudo code
+0-cycle:
+time,data=data_in()
+peaks_t0_loc  = signal-det(time,data)
+signal_clas.init(peaks_t0_loc)
+
+1-cycle: 
+time,data=data_in()
+peaks_t1_loc  = signal-det(time,data)
+
+drift = 0
+new_drift, stat_peaks_loc = signal_clas(peaks_t1_loc, wind_size, drfit)
+
+(note: stat_peaks_loc = possiblity, v_peaks)
+
+N-cycle:
+time,data=data_in()
+peaks_t2_loc  = signal-det(time,data)
+new_drift, stat_peaks_loc = signal_clas(peaks_t2_loc, wind_size, new_drfit)
+
+sig_predict.init(new_drift,stat_peaks_loc)
+
+N+1 cycle:
+time,data=data_in()
+peaks_t2_loc  = signal-det(time,data)
+peaks_t2_loc_p = sig_predict(t2)
+peaks_t2_loc_filtered = sig_filter(peaks_t2_loc,peaks_t2_loc_p)
+output(peaks_t2_loc_filtered)
+
+new_drift, stat_peaks_loc = signal_clas(peaks_t2_loc_filtered , wind_size, new_drfit)
+sig_predict.update(new_drift, stat_peaks_loc)
+
+
