@@ -1,4 +1,12 @@
 {
-    "raw_data":"/aidata/anders/objects/company/meas_scope_20210823.txt",
-    "pattern":"./asset/pattern.npy"
+    "raw_data":"/aidata/anders/objects/company/hmm/dataset/test.npy",
+    "pattern":"/aidata/anders/objects/company/hmm/pattern_2",
+    "filter":{
+        "low_pass":{
+            "fs":1250.0, 
+            "order": 5,
+            "cutoff": 30
+        }
+    }
+    
 }
