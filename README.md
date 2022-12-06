@@ -12,7 +12,7 @@ expected *.npy data shape is (3, N) for <time>, <signal crds voltage>, <signal t
 
 ## How to use
 > python3 probe.py --config=./config/probe.json
-    >  You need to change the folder config/probe.json raw_data: *.txt
+    (You need to change the folder config/probe.json raw_data: *.txt)
 
 ## TODO list
 - [] Add evaluation 
