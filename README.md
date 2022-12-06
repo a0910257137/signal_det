@@ -7,7 +7,7 @@ Expected *.txt data column format: <time>, <signal crds voltage>, <signal triang
 or
 expected *.npy data shape is (3, N) for <time>, <signal crds voltage>, <signal triangle-wave voltage>
 
-## Requirements (Python3.8)
+## Requirements (Python3.8+)
 >. pip3 <or python3 -m pip> install -r requirements.txt
 
 ## How to use
