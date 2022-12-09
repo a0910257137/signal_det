@@ -20,7 +20,7 @@ class Filter(Base):
             return y
 
         y = butter_lowpass_filter(x, self.cutoff, self.fs, self.order)
-        y -= np.mean(y, axis=-1)
+        # y -= np.mean(y, axis=-1)
         return y
 
     def median_filter(self, x: np.ndarray, r: int) -> np.ndarray:

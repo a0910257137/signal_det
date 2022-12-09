@@ -1,8 +1,9 @@
 {
     "raw_data":"/aidata/anders/objects/company/meas_scope_20210823.txt",
-    "pattern":"./asset//patterns",
+    "pattern":"/aidata/anders/objects/company/hmm/pattern_2",
     "window_stride":1, 
-    "similarity_threshold":15,  
+    "similarity_threshold":10,
+    "hyper_extend_len" : 375, 
     "vote_threshold":0.5,
     "triangle_window":2000, 
     "filter":{
