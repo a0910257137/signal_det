@@ -13,7 +13,7 @@ Expected the processed *.npy as input data
 ## Ouput description
 If you run probe.py, it will output and save three *.npy files, tri_peak_idxs.npy, det_idxs.npy and i_idxs.npy.
 
-* tri_peak_idxs.npy : list of np arrays of absolute index for triangle high and low index ex. np.array([100, 200], [300, 400], ..., [n, m])
+* tri_peak_idxs.npy : list of np arrays of absolute index for triangle high and low location ex. np.array([100, 200], [300, 400], ..., [n, m])
 * det_idxs.npy : list of absolute index in raw data for crds peak location.
 * i_idxs.npy : ith window find the crds peak signal
 
