@@ -80,6 +80,9 @@ class Probe:
             i += forward
             j += 1
             progress.update(forward)
+        if tri_high_idxs[0] > tri_low_idxs[0]:
+            tri_low_idxs.pop(0)
+            xxx
 
         m = len(tri_low_idxs) if len(tri_high_idxs) > len(
             tri_low_idxs) else len(tri_high_idxs)
